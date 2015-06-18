@@ -1,0 +1,21 @@
+<template name="ranking">
+    <div>
+        <table border="1">
+            <caption>RANKING</caption>
+            <tr>
+                <td>#</td>
+                <td>Promocao</td>
+                <td>Estabelecimento</td>
+                <td>Pontos</td>
+            </tr>
+            {{#each promocoes}}
+                <tr>
+                    <td><p>{{colocacao}}</p></td>
+                    <td><p>{{promocao}}</p></td>
+                    <td><p>{{estabelecimento}}</p></td>
+                    <td><p>{{pontos}}</p></td>
+                </tr>
+            {{/each}}
+        </table>
+    </div>
+</template>
