@@ -1,7 +1,13 @@
 <template name="index">
     <div id="itensPromocoes">
         {{#each promocoes}}
-            {{promocao}}
+            <ol class="promocoes">
+                {{promocao}}
+            </ol>
+        <div class="details">
+            <button class="inc">+</button>
+        </div>
         {{/each}}
+        <br>
     </div>
 </template>
